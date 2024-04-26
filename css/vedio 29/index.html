@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .parent{
+            height: 80vh;
+            width: 50vw;
+            position: absolute;
+            /* margin:15px; */
+            padding: 15px;
+            border:1.5px solid black;
+            border-radius: 5px;
+            display: flexbox;
+            justify-content: center;
+            transition: 3s;
+            overflow: auto;
+            top: 10%;
+            left: 25%;
+            right: 25%;
+    
+
+        }
+        div>img{
+            /* margin: 5px; */
+            /* padding: 10px; */
+            /* position: ; */
+            height: 40vh;
+            width: 50vw;
+            border-radius: 10px;
+            display: flex;
+            
+        }
+        span{
+            border: 2px solid rgba(190, 186, 186, 0.645);
+           background-color: gray;
+            border-radius: 15px;
+            color: ghostwhite;
+            display: inline-block;
+            padding: 5px;
+            margin: 5px;
+            border: none;
+            
+        }
+        .box1{
+            margin: 5px;
+            padding: 5px
+        }
+        .box2{
+            margin: 5px;
+            padding: 5px;
+            position: relative;
+            width: 20vw;
+            border: 2px solid rgb(88, 181, 238);
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            background-color: blue;
+            color: rgb(211, 211, 224);
+            left: 10vw;
+            top: 5vh;
+            
+            
+            
+            
+
+
+            
+
+        }
+        .box2:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+       <div> <img src="https://cdn.pixabay.com/photo/2023/03/11/22/20/ai-art-7845451_1280.jpg" alt="loading..."></div>
+       <div> <span>Nature</span>
+        <span>Forest</span></div>
+        <div class="box1">
+            <h3>Lago di Braies</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit neque sint iure vero, deleniti reprehenderit aliquid, maiores illum autem dolorum sequi beatae provident, magni nulla exercitationem aperia</p>
+            <div class="box2">
+                Read More
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

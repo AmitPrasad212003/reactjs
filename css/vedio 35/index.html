@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS selector </title>
+    <style>
+        .box:first-child{
+            background-color: red;
+
+        }
+        .box:first-line{
+            color: yellow;
+        }
+        .boxes{
+            color: blue;
+            border: 2px solid black;
+        }
+        p,a, .box, [data-color="primary"]{
+            margin: 2px;
+            padding: 34px;
+        }
+        .box:nth-child(even){
+            background-color: purple;
+        }
+        .box:nth-last-child(1){
+            background-color: goldenrod;
+
+        }
+        .boxes::before{
+            content:"Harry is good"
+        }
+        .boxes::before{
+            content:"Amit is good"
+        }
+        ::selection{
+            background-color: black;
+            color: aqua;
+        }
+        .box::first-letter{
+            color: peru;
+            font-size: 20px;
+        }
+        input::placeholder{
+            color: blue;
+            padding: 12px;
+            margin: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary"  class="box">Hey Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem blanditiis, vero reiciendis aliquam  expedita, laudantium officia sint alias praesentium. Quibusdam reprehenderit facilis ab.I am Box </div>
+        <div class="box">Hey I am Box </div>
+        <div class="box">Hey I am Box </div>
+        <input type="text" placeholder="Type your name Here">
+    </div>
+</body>
+</html>
